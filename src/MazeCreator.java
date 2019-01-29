@@ -1,4 +1,3 @@
-import javax.naming.directory.NoSuchAttributeException;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,6 +7,9 @@ public class MazeCreator {
     
     private Node maze[][];
     private FileReader file_reader;
+    private Node starting_point;
+    private static int ROW_COL_ARRAY_SIZE = 2;
+    private int[] row_size_col_size = new int[ROW_COL_ARRAY_SIZE];
     
     public MazeCreator(String file_name) throws FileNotFoundException {
         try {
@@ -42,19 +44,23 @@ public class MazeCreator {
         BufferedReader character_reader = new BufferedReader(file_reader);
         
         //Because we counted the lines and characters, we can define the maze size
-        this.maze = new Node[num_characters][total_lines];
+        this.maze = new Node[total_lines][num_characters];
+        row_size_col_size[0] = total_lines;
+        row_size_col_size[1] = num_characters;
         
         int current_row = 0;
         try {
             while ((line = character_reader.readLine()) != null) {
                 for(int i = 0; i < num_characters; i++) {
-                    maze[i][current_row] = new Node(line.charAt(i));
-                    maze[i][current_row].set_col_index(i);
-                    maze[i][current_row].set_row_index(current_row);
+                    maze[current_row][i] = new Node(line.charAt(i));
+                    maze[current_row][i].set_col_index(i);
+                    maze[current_row][i].set_row_index(current_row);
+                    if (line.charAt(i) == '!') {
+                        starting_point = maze[current_row][i];
+                    }
                 }
                 current_row++;
             }
-            
             character_reader.close();
         }
         catch (IOException ex) {
@@ -70,6 +76,15 @@ public class MazeCreator {
         return maze;
     }
     
+    public Node get_starting_point() {
+        return starting_point;
+    }
     
+    public Node get_node_at(int row_index, int col_index) {
+        return maze[row_index][col_index];
+    }
     
+    public int[] get_row_col_size() {
+        return row_size_col_size;
+    }
 }

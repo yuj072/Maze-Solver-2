@@ -33,8 +33,8 @@ public class Node {
                 break;
             default:
                 throw new IllegalArgumentException();
-        }//end switch
-    }//end Node constructor
+        }
+    }
     
     public void set_col_index(int new_index) {
         col_index = new_index;
@@ -51,5 +51,17 @@ public class Node {
     public int get_row_index() {
         return row_index;
     }
-}//end Node class definition
+    
+    public boolean get_traversed() {
+        return traversed;
+    }
+    
+    public void toggle_traversed() {
+        traversed = true;
+    }
+    
+    public node_type get_type() {
+        return type;
+    }
+}
 
