@@ -2,13 +2,14 @@
 public class Node {
     
     enum node_type {
-        WALL, PATH, START, END;
+        WALL, PATH, START, END, SOLUTION;
     }
     
     private node_type type;
     private boolean traversed;
     private int row_index;
     private int col_index;
+    private Node predecessor;
     
     private void set_node_type(node_type new_type) {
             type = new_type;
@@ -57,11 +58,53 @@ public class Node {
     }
     
     public void toggle_traversed() {
+        if(this.traversed == true) {
+            traversed = false;
+        }
         traversed = true;
     }
     
     public node_type get_type() {
         return type;
+    }
+    
+    public Node get_predecessor() {
+        return predecessor;
+    }
+    
+    public void set_predecessor(Node new_predecessor) {
+        predecessor = new_predecessor;
+    }
+    
+    public void toggle_solution() {
+        if(this.type == node_type.SOLUTION) {
+            this.type = node_type.PATH;
+        }
+        this.type = node_type.SOLUTION;
+    }
+    
+    public String to_string() {
+        String output_char = "";
+        node_type current_type = this.get_type();
+        switch(current_type) {
+            case WALL:
+                output_char = "#";
+                break;
+            case PATH:
+                output_char = " ";
+                break;
+            case START:
+                output_char = "!";
+                break;
+            case END:
+                output_char = "$";
+                break;
+            case SOLUTION:
+                output_char = "O";
+                break;
+        }
+        
+        return output_char;
     }
 }
 
