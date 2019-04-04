@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Node {
     
@@ -10,6 +11,8 @@ public class Node {
     private int row_index;
     private int col_index;
     private Node predecessor;
+    private boolean critical = false;
+    private ArrayList<Node> critical_list = new ArrayList<>();
     
     private void set_node_type(node_type new_type) {
             type = new_type;
@@ -28,9 +31,11 @@ public class Node {
                 break;
             case '!':
                 set_node_type(node_type.START);
+                set_critical(true);
                 break;
             case '$':
                 set_node_type(node_type.END);
+                set_critical(true);
                 break;
             default:
                 throw new IllegalArgumentException();
@@ -58,8 +63,9 @@ public class Node {
     }
     
     public void toggle_traversed() {
-        if(this.traversed == true) {
+        if(this.traversed == true && !(this.type == node_type.WALL)) {
             traversed = false;
+            return;
         }
         traversed = true;
     }
@@ -76,9 +82,11 @@ public class Node {
         predecessor = new_predecessor;
     }
     
+    
     public void toggle_solution() {
         if(this.type == node_type.SOLUTION) {
             this.type = node_type.PATH;
+            return;
         }
         this.type = node_type.SOLUTION;
     }
@@ -86,6 +94,11 @@ public class Node {
     public String to_string() {
         String output_char = "";
         node_type current_type = this.get_type();
+        if(!(current_type == node_type.END) && !(this.type == node_type.START) && !(this.type == node_type.SOLUTION)) {
+            if(critical) {
+                return "%";
+            }
+        }
         switch(current_type) {
             case WALL:
                 output_char = "#";
@@ -105,6 +118,26 @@ public class Node {
         }
         
         return output_char;
+    }
+    
+    public void set_critical(boolean new_critical) {
+        critical = new_critical;
+    }
+    
+    public boolean get_critical() {
+        return critical;
+    }
+    
+    public void link(Node node) {
+        this.critical_list.add(node);
+    }
+    
+    public int get_critical_list_size() {
+        return critical_list.size();
+    }
+    
+    public Node get_critical_list_element() {
+        return critical_list.remove(0);
     }
 }
 

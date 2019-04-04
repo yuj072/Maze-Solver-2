@@ -110,7 +110,7 @@ public class MazeCreator {
         reset_maze();
     }
     
-    private void reset_maze() {
+    public void reset_maze() {
         for(int i = 0; i < row_size_col_size[0]; i++ ) {
             for(int j = 0; j < row_size_col_size[1]; j++) {
                 if(maze[i][j].get_traversed()) {
@@ -155,4 +155,13 @@ public class MazeCreator {
     public String print_solved_maze() {
         return solved_maze_string;
     }
+    
+    public void update_maze(boolean solved) {
+        if(solved) {
+            solved_maze_string = this.to_string();
+            return;
+        }
+        unsolved_maze_string = this.to_string();
+    }
+    
 }
