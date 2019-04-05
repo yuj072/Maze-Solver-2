@@ -7,8 +7,6 @@ import java.util.ArrayList;
 public class MazeCreator {
     
     private Node maze[][];
-    private Node unsolved_maze[][];
-    private Node solved_maze[][];
     private FileReader file_reader;
     private Node starting_point;
     private static int ROW_COL_ARRAY_SIZE = 2;
@@ -21,7 +19,7 @@ public class MazeCreator {
         global_file_name = file_name;
         try {
             file_reader = new FileReader(file_name);
-            System.out.print("Constructor: file read: " + file_name + '\n');
+            //System.out.print("Constructor: file read: " + file_name + '\n');
         }
         catch (FileNotFoundException ex) {
             ex.getMessage();
@@ -41,7 +39,7 @@ public class MazeCreator {
                 num_characters = line.length();
                 total_lines++;
             }
-            System.out.println("Read and parse: Totals lines counted: " + total_lines + " total chars per line: " + num_characters);
+            //System.out.println("Read and parse: Totals lines counted: " + total_lines + " total chars per line: " + num_characters);
             line_counter.close();
         }
         catch (IOException ex) {
@@ -59,10 +57,10 @@ public class MazeCreator {
         
         int current_row = 0;
         try {
-            System.out.println("Read Maze:");
+            //System.out.println("Read Maze:");
             while ((line = character_reader.readLine()) != null) {
                 for(int i = 0; i < num_characters; i++) {
-                    System.out.print(line.charAt(i));
+                    //System.out.print(line.charAt(i));
                     maze[current_row][i] = new Node(line.charAt(i));
                     maze[current_row][i].set_col_index(i);
                     maze[current_row][i].set_row_index(current_row);
@@ -71,7 +69,7 @@ public class MazeCreator {
                     }
                 }
                 current_row++;
-                System.out.println();
+                //System.out.println();
             }
             character_reader.close();
         }
@@ -141,7 +139,7 @@ public class MazeCreator {
     private void restart_file_reader() {
         try {
             file_reader = new FileReader(global_file_name);
-            System.out.print("Constructor: file read: " + global_file_name + '\n');
+            //System.out.print("Constructor: file read: " + global_file_name + '\n');
         }
         catch (FileNotFoundException ex) {
             ex.getMessage();

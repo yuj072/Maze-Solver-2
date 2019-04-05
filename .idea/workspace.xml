@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="57cefcad-5621-448e-9279-08079d288f8b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze Solver 2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze Solver 2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze Solver 2/MazeCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze Solver 2/MazeCreator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Maze Solver 2/MazeSolver2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze Solver 2/MazeSolver2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze Solver 2/Node$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze Solver 2/Node$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze Solver 2/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze Solver 2/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MazeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MazeSolver2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolver2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +21,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+            <state relative-caret-position="221">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -37,17 +32,30 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MazeSolver2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MazeSolver2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
               <folding>
-                <element signature="e#2894#2895#0" expanded="true" />
-                <element signature="e#2933#2934#0" expanded="true" />
-                <element signature="e#2974#2975#0" expanded="true" />
-                <element signature="e#3005#3006#0" expanded="true" />
-                <element signature="e#3250#3251#0" expanded="true" />
-                <element signature="e#3278#3279#0" expanded="true" />
-                <element signature="e#3337#3338#0" expanded="true" />
-                <element signature="e#3372#3373#0" expanded="true" />
-                <element signature="e#3435#3436#0" expanded="true" />
-                <element signature="e#3477#3478#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
+                <element signature="e#16504#16505#0" expanded="true" />
+                <element signature="e#16540#16541#0" expanded="true" />
+                <element signature="e#16593#16594#0" expanded="true" />
+                <element signature="e#16632#16633#0" expanded="true" />
+                <element signature="e#16676#16677#0" expanded="true" />
+                <element signature="e#16714#16715#0" expanded="true" />
+                <element signature="e#16758#16759#0" expanded="true" />
+                <element signature="e#16796#16797#0" expanded="true" />
+                <element signature="e#16849#16850#0" expanded="true" />
+                <element signature="e#16896#16897#0" expanded="true" />
+                <element signature="e#16949#16950#0" expanded="true" />
+                <element signature="e#16996#16997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,37 +64,22 @@
       <file leaf-file-name="MazeCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MazeCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1492">
-              <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="224">
+              <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MazeSolver2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MazeSolver2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="163" column="50" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#730#736#0" expanded="true" />
-                <element signature="e#2175#2181#0" expanded="true" />
-                <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-                <element signature="e#15189#15190#0" expanded="true" />
-                <element signature="e#15225#15226#0" expanded="true" />
-                <element signature="e#15278#15279#0" expanded="true" />
-                <element signature="e#15317#15318#0" expanded="true" />
-                <element signature="e#15361#15362#0" expanded="true" />
-                <element signature="e#15399#15400#0" expanded="true" />
-                <element signature="e#15443#15444#0" expanded="true" />
-                <element signature="e#15481#15482#0" expanded="true" />
-                <element signature="e#15534#15535#0" expanded="true" />
-                <element signature="e#15581#15582#0" expanded="true" />
-                <element signature="e#15634#15635#0" expanded="true" />
-                <element signature="e#15681#15682#0" expanded="true" />
+                <element signature="e#3069#3070#0" expanded="true" />
+                <element signature="e#3096#3097#0" expanded="true" />
+                <element signature="e#3140#3141#0" expanded="true" />
+                <element signature="e#3177#3178#0" expanded="true" />
+                <element signature="e#3242#3243#0" expanded="true" />
+                <element signature="e#3291#3292#0" expanded="true" />
+                <element signature="e#3334#3335#0" expanded="true" />
+                <element signature="e#3374#3375#0" expanded="true" />
+                <element signature="e#4911#4912#0" expanded="true" />
+                <element signature="e#4954#4955#0" expanded="true" />
+                <element signature="e#4999#5000#0" expanded="true" />
+                <element signature="e#5040#5041#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,6 +98,9 @@
     <findStrings>
       <find>mark_sol</find>
       <find>mark</find>
+      <find>file read</find>
+      <find>BFS</find>
+      <find>Read m</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,9 +111,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Reader.java" />
         <option value="$PROJECT_DIR$/src/CharacterReader.java" />
-        <option value="$PROJECT_DIR$/src/MazeCreator.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/MazeSolver2.java" />
+        <option value="$PROJECT_DIR$/src/MazeCreator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -132,7 +128,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="666" />
+    <option name="x" value="665" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -145,7 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +176,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -205,7 +201,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Maze Solver 2" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;tests\test1.txt&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;tests\test3.txt&quot;" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -237,12 +233,13 @@
       <workItem from="1549555363445" duration="4209000" />
       <workItem from="1549987332641" duration="4557000" />
       <workItem from="1550765736648" duration="345000" />
-      <workItem from="1554239632535" duration="16153000" />
+      <workItem from="1554239632535" duration="16887000" />
+      <workItem from="1554419647030" duration="3948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52467000" />
+    <option name="totallyTimeSpent" value="57149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -292,61 +289,59 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        <state relative-caret-position="765">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <element signature="e#2894#2895#0" expanded="true" />
-            <element signature="e#2933#2934#0" expanded="true" />
-            <element signature="e#2974#2975#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-            <element signature="e#3278#3279#0" expanded="true" />
-            <element signature="e#3337#3338#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MazeCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="1513">
+          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MazeSolver2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+        <state relative-caret-position="2703">
+          <caret line="163" column="50" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -371,6 +366,18 @@
           <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -381,21 +388,78 @@
           <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MazeCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MazeSolver2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -420,21 +484,19 @@
           <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -445,6 +507,18 @@
           <caret line="41" column="112" selection-start-line="41" selection-start-column="112" selection-end-line="41" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -469,21 +543,19 @@
           <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -494,6 +566,18 @@
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -513,6 +597,18 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -523,21 +619,19 @@
           <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,6 +651,18 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,21 +673,19 @@
           <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,6 +705,18 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -611,21 +727,19 @@
           <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -646,6 +760,18 @@
           <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,21 +782,19 @@
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,6 +808,18 @@
           <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,6 +850,18 @@
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,64 +883,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MazeCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1492">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#2894#2895#0" expanded="true" />
-            <element signature="e#2933#2934#0" expanded="true" />
-            <element signature="e#2974#2975#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-            <element signature="e#3278#3279#0" expanded="true" />
-            <element signature="e#3337#3338#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MazeSolver2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="163" column="50" selection-start-line="163" selection-start-column="50" selection-end-line="163" selection-end-column="50" />
+        <state relative-caret-position="35">
+          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#730#736#0" expanded="true" />
-            <element signature="e#2175#2181#0" expanded="true" />
             <element signature="method#populate_solution_path#1;class#MazeSolver2#0" />
-            <element signature="e#15189#15190#0" expanded="true" />
-            <element signature="e#15225#15226#0" expanded="true" />
-            <element signature="e#15278#15279#0" expanded="true" />
-            <element signature="e#15317#15318#0" expanded="true" />
-            <element signature="e#15361#15362#0" expanded="true" />
-            <element signature="e#15399#15400#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15481#15482#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#15581#15582#0" expanded="true" />
-            <element signature="e#15634#15635#0" expanded="true" />
-            <element signature="e#15681#15682#0" expanded="true" />
+            <element signature="e#16504#16505#0" expanded="true" />
+            <element signature="e#16540#16541#0" expanded="true" />
+            <element signature="e#16593#16594#0" expanded="true" />
+            <element signature="e#16632#16633#0" expanded="true" />
+            <element signature="e#16676#16677#0" expanded="true" />
+            <element signature="e#16714#16715#0" expanded="true" />
+            <element signature="e#16758#16759#0" expanded="true" />
+            <element signature="e#16796#16797#0" expanded="true" />
+            <element signature="e#16849#16850#0" expanded="true" />
+            <element signature="e#16896#16897#0" expanded="true" />
+            <element signature="e#16949#16950#0" expanded="true" />
+            <element signature="e#16996#16997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MazeCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3291#3292#0" expanded="true" />
+            <element signature="e#3334#3335#0" expanded="true" />
+            <element signature="e#3374#3375#0" expanded="true" />
+            <element signature="e#4911#4912#0" expanded="true" />
+            <element signature="e#4954#4955#0" expanded="true" />
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5040#5041#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+        <state relative-caret-position="221">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
         </state>
       </provider>
     </entry>

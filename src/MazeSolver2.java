@@ -67,6 +67,7 @@ public class MazeSolver2 {
         Node current_node;
         Node processing_node;
         boolean path_marked;
+        int current_node_list_size;
         
         while(!queue.isEmpty()) {
             if(queue.peek().get_type() == Node.node_type.END) {
@@ -76,11 +77,14 @@ public class MazeSolver2 {
             current_node = queue.remove();
             current_node.toggle_traversed();
             
-            for(int i = 0; i < current_node.get_critical_list_size(); i++) {
+            current_node_list_size = current_node.get_critical_list_size();
+            for(int i = 0; i < current_node_list_size; i++) {
                 processing_node = current_node.get_critical_list_element();
-                queue.add(processing_node);
-                processing_node.set_predecessor(current_node);
-                BFS_critical_nodes_added++;
+                if(!processing_node.get_traversed() && !queue.contains(processing_node)) {
+                    queue.add(processing_node);
+                    processing_node.set_predecessor(current_node);
+                    BFS_critical_nodes_added++;
+                }
             }
         }
         
@@ -140,6 +144,7 @@ public class MazeSolver2 {
         Node current_node;
         Node processing_node;
         boolean path_marked;
+        int current_node_list_size;
         
         while(!stack.isEmpty()) {
             if(stack.peek().get_type() == Node.node_type.END) {
@@ -148,12 +153,14 @@ public class MazeSolver2 {
             
             current_node = stack.pop();
             current_node.toggle_traversed();
-            
-            for(int i = 0; i < current_node.get_critical_list_size(); i++) {
+            current_node_list_size = current_node.get_critical_list_size();
+            for(int i = 0; i < current_node_list_size; i++) {
                 processing_node = current_node.get_critical_list_element();
-                stack.push(processing_node);
-                processing_node.set_predecessor(current_node);
-                DFS_critical_nodes_added++;
+                if(!processing_node.get_traversed() && !stack.contains(processing_node)) {
+                    stack.push(processing_node);
+                    processing_node.set_predecessor(current_node);
+                    DFS_critical_nodes_added++;
+                }
             }
         }
         
@@ -345,7 +352,7 @@ public class MazeSolver2 {
                     break;
                 }
                 if(processing_node.get_critical()) {
-                    if(processing_node.get_traversed()) {
+                    if(!processing_node.get_traversed()) {
                         stack.add(processing_node);
                         current_node.link(processing_node);
                     }
@@ -362,7 +369,7 @@ public class MazeSolver2 {
                     break;
                 }
                 if(processing_node.get_critical()) {
-                    if(processing_node.get_traversed()) {
+                    if(!processing_node.get_traversed()) {
                         stack.add(processing_node);
                         current_node.link(processing_node);
                     }
@@ -379,7 +386,7 @@ public class MazeSolver2 {
                     break;
                 }
                 if(processing_node.get_critical()) {
-                    if(processing_node.get_traversed()) {
+                    if(!processing_node.get_traversed()) {
                         stack.add(processing_node);
                         current_node.link(processing_node);
                     }
@@ -407,7 +414,6 @@ public class MazeSolver2 {
             counter = 1;
         }
         initialized_maze.reset_maze();
-        System.out.println("Linked Critical Nodes");
     }
     
     private int count_traversable_neighbors(Node neighbors[]) {
