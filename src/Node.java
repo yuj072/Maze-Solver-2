@@ -1,3 +1,7 @@
+/*
+* Author: Yuneng Jiang
+ */
+
 import java.util.ArrayList;
 
 public class Node {
