@@ -1,3 +1,7 @@
+/*
+* Author: Yuneng Jiang
+ */
+
 import java.io.FileNotFoundException;
 
 public class Main {
