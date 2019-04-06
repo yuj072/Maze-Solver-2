@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class MazeCreator {
     
+    //Variable for all MazeCreator instances.
     private Node maze[][];
     private FileReader file_reader;
     private Node starting_point;
@@ -15,11 +16,15 @@ public class MazeCreator {
     private String unsolved_maze_string;
     private String solved_maze_string;
     
+    /* The constructor for MazeCreator instances. It creates an instance of a FileReader that
+    *  reads the .txt file passed in by the user.
+    *  @Params: String file_name - the name of the .txt file containing the text version of the maze
+    *  @Returns: None.
+     */
     public MazeCreator(String file_name) throws FileNotFoundException {
         global_file_name = file_name;
         try {
             file_reader = new FileReader(file_name);
-            //System.out.print("Constructor: file read: " + file_name + '\n');
         }
         catch (FileNotFoundException ex) {
             ex.getMessage();
@@ -27,6 +32,13 @@ public class MazeCreator {
         }
     }
     
+    /* This method uses the FileReader initialized by the MazeCreator constructor and parses the maze
+    *  in order to obtain an internal representation of the maze. It first must count the number of
+    *  lines the entire maze has, and then it restarts the reader in order to count the number of characters
+    *  per line. If the maze is not in a rectangle or square shape, an error message will be printed out.
+    *  @Params: None.
+    *  @Returns: None.
+     */
     public void read_and_parse_maze(){
         BufferedReader line_counter = new BufferedReader(file_reader);
         String line;
@@ -39,7 +51,6 @@ public class MazeCreator {
                 num_characters = line.length();
                 total_lines++;
             }
-            //System.out.println("Read and parse: Totals lines counted: " + total_lines + " total chars per line: " + num_characters);
             line_counter.close();
         }
         catch (IOException ex) {
@@ -57,10 +68,8 @@ public class MazeCreator {
         
         int current_row = 0;
         try {
-            //System.out.println("Read Maze:");
             while ((line = character_reader.readLine()) != null) {
                 for(int i = 0; i < num_characters; i++) {
-                    //System.out.print(line.charAt(i));
                     maze[current_row][i] = new Node(line.charAt(i));
                     maze[current_row][i].set_col_index(i);
                     maze[current_row][i].set_row_index(current_row);
@@ -69,7 +78,6 @@ public class MazeCreator {
                     }
                 }
                 current_row++;
-                //System.out.println();
             }
             character_reader.close();
         }
@@ -83,22 +91,11 @@ public class MazeCreator {
         unsolved_maze_string = this.to_string();
     }
     
-    public Node[][] get_maze() {
-        return maze;
-    }
-    
-    public Node get_starting_point() {
-        return starting_point;
-    }
-    
-    public Node get_node_at(int row_index, int col_index) {
-        return maze[row_index][col_index];
-    }
-    
-    public int[] get_row_col_size() {
-        return row_size_col_size;
-    }
-    
+    /* This method is used to mark the solution path when a valid solution path has been found.
+    *  @Params: ArrayList<Node> solution_path - an ArrayList containing all the Nodes that are part
+    *           of the solution path.
+    *  @Returns: None.
+     */
     public void mark_solution_path(ArrayList<Node> solution_path) {
         for(int i = 0; i < solution_path.size(); i++) {
             solution_path.get(i).toggle_solution();
@@ -108,6 +105,12 @@ public class MazeCreator {
         reset_maze();
     }
     
+    /* This method resets the maze in the following manner:
+    *  traversed - if a node has the traversed flag set to true, this will set it to false.
+    *  solution - if a node has the solution flag set to true, this will set it to false.
+    *  @Params: None.
+    *  @Returns: None.
+     */
     public void reset_maze() {
         for(int i = 0; i < row_size_col_size[0]; i++ ) {
             for(int j = 0; j < row_size_col_size[1]; j++) {
@@ -122,6 +125,12 @@ public class MazeCreator {
         
     }
     
+    /* This method returns the string representation of the entire maze. It calls the toString method
+    *  of each of the Nodes inside of this maze and concatenates them into one string and then returns
+    *  the string.
+    *  @Params: None.
+    *  @Returns: The string representation of the maze.
+     */
     private String to_string() {
         String string_representation = "";
         
@@ -136,16 +145,36 @@ public class MazeCreator {
         return string_representation;
     }
     
+    /* Helper method used in the method read_and_parse_maze to restart the FileReader
+    *  @Params: None.
+    *  @Returns: None.
+     */
     private void restart_file_reader() {
         try {
             file_reader = new FileReader(global_file_name);
-            //System.out.print("Constructor: file read: " + global_file_name + '\n');
         }
         catch (FileNotFoundException ex) {
             ex.getMessage();
         }
     }
     
+    /* Helper method to refresh the string representation of the mazes. Since the MazeCreator
+    *  holds a string representation of both the unsolved and solved maze, it takes in a boolean to
+    *  help differentiate between which to refresh.
+    *  @Params: boolean solved - The boolean to decide which string representation to refresh.
+    *           If this is true, it refreshes the solved maze's string representation.
+    *           If this is false, it refreshes the unsolved maze's string representation.
+    *  @Returns: None.
+     */
+    public void update_maze(boolean solved) {
+        if(solved) {
+            solved_maze_string = this.to_string();
+            return;
+        }
+        unsolved_maze_string = this.to_string();
+    }
+    
+    /* Getters and Setters */
     public String print_unsolved_maze() {
         return unsolved_maze_string;
     }
@@ -153,13 +182,22 @@ public class MazeCreator {
     public String print_solved_maze() {
         return solved_maze_string;
     }
+
     
-    public void update_maze(boolean solved) {
-        if(solved) {
-            solved_maze_string = this.to_string();
-            return;
-        }
-        unsolved_maze_string = this.to_string();
+    public Node get_starting_point() {
+        return starting_point;
+    }
+    
+    public Node get_node_at(int row_index, int col_index) {
+        return maze[row_index][col_index];
+    }
+    
+    public int[] get_row_col_size() {
+        return row_size_col_size;
+    }
+    
+    public Node[][] get_maze() {
+        return maze;
     }
     
 }
