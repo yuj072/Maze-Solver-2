@@ -1,6 +1,8 @@
-Maze Solver2 by Yuneng Jiang
+# Maze Solver 2
 
-Motivation: 
+Project Type: Independent
+
+# Motivation 
 
 	When I first learned about data structures during my sophomore year of college, 
 the data structures seemed so abstract and pointless. Everything felt like a small variation
@@ -14,14 +16,14 @@ The inspiration for adding critical nodes came from this video:
 (Maze Solving - Computerphile) : 
 https://www.youtube.com/watch?v=rop0W4QDOUI 
 
-Summary: 
+# Summary
 
 	This application performs Depth-First-Search (DFS) and Breath-First-Search (BFS) on 
 a maze inputted by the user. It outputs the number of nodes each search went through to find 
 an exit (if there exists one in the maze). Next, it will analyze the maze and mark the critical 
 nodes. Then, it will run the searches again using only the critical nodes found through the analysis. 
 
-How to use: 
+# How to use
 
 	The maze to input into the program will be a .txt (text file) and the location of 
 the .txt file will be passed in as a command line argument for the program. There will be 4 symbols 
@@ -33,9 +35,9 @@ representing different tiles one can commonly find in mazes:
 	'$' (the dollar sign character) represents the exit.
 
 Note: Do not include single quotes when inputting the characters into the .txt file. Critical nodes 
-will be marked by the program with a ‘%’ (the modulo character).
+will be marked by the program with a â€˜%â€™ (the modulo character).
 
-Limitations: 
+# Limitations
 
 	The current version does not support mazes with multiple starting points and exits. The 
 	search will end as soon as it finds one exit.
